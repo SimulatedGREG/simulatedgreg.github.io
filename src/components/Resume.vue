@@ -46,7 +46,7 @@
       <div class="column">
         <div class="experience-item">
           <strong>electron-vue,</strong> <a href="https://github.com/SimulatedGREG/electron-vue" target="_blank">GitHub</a>
-          <p>An Electron &amp; Vue.js quick start boilerplate with vue-cli support. Slowly growing more and more popular everyday with nearly 400 stargazers on GitHub.</p>
+          <p>An Electron &amp; Vue.js quick start boilerplate with vue-cli support. Slowly growing more and more popular everyday with {{ stars }} stargazers on GitHub.</p>
         </div>
       </div>
     </div>
@@ -119,8 +119,15 @@
             description: 'Created website to increase real estate office’s website potential of getting online leads and has succeeded significantly.',
             link: 'http://targetrealtyinc.com'
           }
-        ]
+        ],
+        stars: 'nearly 400'
       }
+    },
+    created () {
+      this.$http.get('https://api.github.com/repos/simulatedgreg/electron-vue')
+        .then(({ data }) => {
+          this.stars = data.stargazers_count
+        })
     }
   }
 </script>

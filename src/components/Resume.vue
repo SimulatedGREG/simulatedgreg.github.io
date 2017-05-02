@@ -19,7 +19,12 @@
       </div>
       <div class="column">
         <div class="experience-item alt">
-          <p>Web development professional with over two years of experience in both front and back end. Highly skilled in JavaScript technologies such as Vue.js and Loopback. Always wanting to make applications efficient and workflow organized as possible. Open to trying new platforms &amp; frameworks.</p>
+          <p>
+            Web development professional with over three years of experience in both front and back
+            end. Highly skilled in JavaScript technologies such as <strong>Vue.js</strong> and
+            <strong>Loopback</strong>. Always wanting to make applications efficient and workflow
+            organized as possible. Open to trying new platforms &amp; frameworks.
+          </p>
         </div>
       </div>
     </div>
@@ -34,7 +39,7 @@
           <br>
           <span v-if="exp.time.end">{{ exp.time.begin }} &ndash; {{ exp.time.end }}</span>
           <span v-else>{{ exp.time.begin }}</span>
-          <p>{{ exp.description }}</p>
+          <p v-html="exp.description"></p>
         </div>
       </div>
     </div>
@@ -46,7 +51,7 @@
       <div class="column">
         <div class="experience-item">
           <strong>electron-vue,</strong> <a href="https://github.com/SimulatedGREG/electron-vue" target="_blank">GitHub</a>
-          <p>An Electron &amp; Vue.js quick start boilerplate with vue-cli support. Slowly growing more and more popular everyday with {{ stars }} stargazers on GitHub.</p>
+          <p>An <strong>Electron</strong> &amp; <strong>Vue.js</strong> quick start boilerplate with <strong>vue-cli</strong> scaffolding. Slowly growing more and more popular everyday with <strong>{{ stars }} stargazers</strong> on GitHub.</p>
         </div>
       </div>
     </div>
@@ -78,7 +83,7 @@
         </div>
         <div class="experience-item">
           <strong>Familiar</strong>
-          <p>React, Node.js, SASS/Scss, MongoDB, PostgreSQL, MySQL, Firebase, Angular, nginx, gulp.js, socket.io, Photoshop, Illustrator</p>
+          <p>React, Node.js, SASS/Scss, Horizon.io, MongoDB, PostgreSQL, MySQL, Firebase, Angular, nginx, gulp.js, socket.io, Photoshop, Illustrator</p>
         </div>
       </div>
     </div>
@@ -91,10 +96,20 @@
       return {
         experience: [
           {
-            title: 'Full Stack Developer',
+            title: 'UI/UX Software Engineer',
+            company: 'Razer Inc. (Razer Arena)',
+            time: {
+              begin: 'March 2017',
+              end: 'Present'
+            },
+            description: 'Working with large team to create and maintain a large-scale tournament system web app for online gamers. Built as a large scale <strong>Vue.js</strong> application with <strong>Vuex</strong> state management. Individually implemented features from designers and cradled them through to production.',
+            link: 'https://arena.razerzone.com'
+          },
+          {
+            title: 'Full Stack JavaScript Developer',
             company: 'The Pokéthon Team',
             time: {
-              begin: 'Jan 2016',
+              begin: 'May 2015',
               end: 'Present'
             },
             description: 'A charity gaming marathon where a group of friends play through various Pokémon games in a marathon style to raise money for charity. Am in charge of creating and maintaining website, backend API, system dashboard, stream overlays, and system monitoring.',
@@ -102,7 +117,7 @@
           },
           {
             title: 'Web Developer',
-            company: 'LocateMyNewHome.com LLC',
+            company: 'LocateMyNewHome.com',
             time: {
               begin: 'Oct 2015',
               end: 'Jan 2016'
@@ -139,12 +154,12 @@
     span { color: rgba(#4a4a4a, .75); }
 
     p {
-      color: rgba(#4a4a4a, .75);
+      color: rgba(#4a4a4a, .7);
       margin-top: 6px;
-      transition: color 100ms ease-in-out;
+      transition: color 250ms ease-in-out;
     }
 
-    &:hover p { color: #4a4a4a; }
+    &:hover p { color: rgba(#4a4a4a, .95); }
 
     &.alt {
       margin-bottom: 0;

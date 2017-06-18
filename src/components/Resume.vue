@@ -77,13 +77,13 @@
         <div class="experience-item">
           <strong>Proficient</strong>
           <p>
-            JavaScript (ES6/7), Vue.js, Loopback, Electron
-            <br>Git, CommonJS, Webpack, ESLint
+            JavaScript (ES6+), Vue.js, Loopback, Electron
+            <br>Core Node.js Modules, Git, Webpack, ESLint
           </p>
         </div>
         <div class="experience-item">
           <strong>Familiar</strong>
-          <p>React, Node.js, SASS/Scss, Horizon.io, MongoDB, PostgreSQL, MySQL, Firebase, Angular, nginx, gulp.js, socket.io, Photoshop, Illustrator</p>
+          <p>React, SASS/Scss, Horizon.io, MongoDB, PostgreSQL, MySQL, Firebase, Angular, nginx, gulp.js, socket.io, Photoshop, Illustrator</p>
         </div>
       </div>
     </div>
@@ -96,16 +96,6 @@
       return {
         experience: [
           {
-            title: 'UI/UX Software Engineer',
-            company: 'Razer Inc. (Razer Arena)',
-            time: {
-              begin: 'March 2017',
-              end: 'Present'
-            },
-            description: 'Working with large team to create and maintain a large-scale tournament system web app for online gamers. Built as a large scale <strong>Vue.js</strong> application with <strong>Vuex</strong> state management. Individually implemented features from designers and cradled them through to production.',
-            link: 'https://arena.razerzone.com'
-          },
-          {
             title: 'Full Stack JavaScript Developer',
             company: 'The Pokéthon Team',
             time: {
@@ -114,6 +104,16 @@
             },
             description: 'A charity gaming marathon where a group of friends play through various Pokémon games in a marathon style to raise money for charity. Am in charge of creating and maintaining website, backend API, system dashboard, stream overlays, and system monitoring.',
             link: 'https://pokethon.net'
+          },
+          {
+            title: 'UI/UX Software Engineer',
+            company: 'Razer Inc. (Razer Arena)',
+            time: {
+              begin: 'March 2017',
+              end: 'June 2017'
+            },
+            description: 'Worked with large team to create and maintain a large-scale tournament system web app for online gamers. Built as a large scale <strong>Vue.js</strong> application with <strong>Vuex</strong> state management. Individually implemented features from designers and cradled them through to production.',
+            link: 'https://www.razerzone.com/arena'
           },
           {
             title: 'Web Developer',

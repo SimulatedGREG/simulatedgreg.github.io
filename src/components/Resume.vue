@@ -20,7 +20,7 @@
       <div class="column">
         <div class="experience-item alt">
           <p>
-            Web development professional with over three years of experience in both front and back
+            Web development professional with over four years of experience in both front and back
             end. Highly skilled in JavaScript technologies such as <strong>Vue.js</strong> and
             <strong>Loopback</strong>. Always wanting to make applications efficient and workflow
             organized as possible. Open to trying new platforms &amp; frameworks.
@@ -83,7 +83,7 @@
         </div>
         <div class="experience-item">
           <strong>Familiar</strong>
-          <p>React, SASS/Scss, Horizon.io, MongoDB, PostgreSQL, MySQL, Firebase, Angular, nginx, gulp.js, socket.io, Photoshop, Illustrator</p>
+          <p>React, SASS/Scss, Horizon.io, MongoDB, PostgreSQL, MySQL, PHP, Twig, Firebase, Angular, nginx, gulp.js, socket.io, Photoshop, Illustrator</p>
         </div>
       </div>
     </div>
@@ -95,6 +95,16 @@
     data () {
       return {
         experience: [
+          {
+            title: 'Front-end Developer',
+            company: 'Chess.com',
+            time: {
+              begin: 'October 2017',
+              end: 'Present'
+            },
+            description: 'Part of large-scale website centered around the act of playing the game of Chess. Have worked on various projects around the code base including both current & new features using <strong>Vue.js</strong> and other parts of its core ecosystem. Part of team that focuses on performance within deeper chess logic.',
+            link: 'https://www.chess.com/'
+          },
           {
             title: 'Full Stack JavaScript Developer',
             company: 'The Pokéthon Team',
